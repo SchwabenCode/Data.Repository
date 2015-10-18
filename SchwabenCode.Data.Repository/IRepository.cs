@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using SchwabenCode.Data.Entity;
+﻿using SchwabenCode.Data.Entity;
 using System.Linq;
 
 namespace SchwabenCode.Data.Repository
@@ -7,7 +6,8 @@ namespace SchwabenCode.Data.Repository
     /// <summary>
     /// Interface for base repository
     /// </summary>
-    /// <typeparam name="TEntity"></typeparam>
+    /// <typeparam name="TEntity">Entity</typeparam>
+    /// <typeparam name="TIdentifier">Type of entity identifier</typeparam>
     public interface IRepository<TEntity, TIdentifier>
         where TEntity : IEntity<TIdentifier>
         where TIdentifier : struct

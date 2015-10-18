@@ -1,12 +1,14 @@
 ﻿using SchwabenCode.Data.Entity;
-using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
 namespace SchwabenCode.Data.Repository
 {
-
+    /// <summary>
+    /// Interface for base repository
+    /// </summary>
+    /// <typeparam name="TEntity">Entity</typeparam>
+    /// <typeparam name="TIdentifier">Type of entity identifier</typeparam>
     public interface IRepositoryAsync<TEntity, TIdentifier>
         where TEntity : IEntity<TIdentifier>
         where TIdentifier : struct
