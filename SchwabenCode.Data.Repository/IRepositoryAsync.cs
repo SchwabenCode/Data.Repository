@@ -27,7 +27,12 @@ namespace SchwabenCode.Data.Repository
         /// <summary>
         /// Removes given entity
         /// </summary>
-        Task<TEntity> RemoveAsync( TEntity entity );
+        Task RemoveAsync( TEntity entity );
+
+        /// <summary>
+        /// Removes given entity by id
+        /// </summary>
+        Task RemoveAsync( TIdentifier id );
 
         /// <summary>
         /// Returns the item with specified identifier

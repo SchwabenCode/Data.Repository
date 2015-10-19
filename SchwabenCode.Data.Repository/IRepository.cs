@@ -25,7 +25,12 @@ namespace SchwabenCode.Data.Repository
         /// <summary>
         /// Removes given entity
         /// </summary>
-        TEntity Remove( TEntity entity );
+        void Remove( TEntity entity );
+
+        /// <summary>
+        /// Removes given entity by id
+        /// </summary>
+        void Remove( TIdentifier id );
 
         /// <summary>
         /// Returns the item with specified identifier
