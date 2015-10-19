@@ -1,5 +1,5 @@
 ﻿using SchwabenCode.Data.Entity;
-using System.Linq;
+using System.Collections.Generic;
 
 namespace SchwabenCode.Data.Repository
 {
@@ -36,7 +36,7 @@ namespace SchwabenCode.Data.Repository
         /// Returns all items of current collection
         /// </summary>
         /// <remarks>Handle with care</remarks>
-        IQueryable<TEntity> GetAll();
+        IEnumerable<TEntity> GetAll();
 
         /// <summary>
         /// Returns count of all items in current collection
