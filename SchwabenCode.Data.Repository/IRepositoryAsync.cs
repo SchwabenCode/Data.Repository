@@ -15,6 +15,11 @@ namespace SchwabenCode.Data.Repository
     {
 
         /// <summary>
+        /// Checks existance of given id
+        /// </summary>
+        Task<bool> ExistsAsync( TIdentifier id );
+
+        /// <summary>
         /// Adds given entity
         /// </summary>
         Task<TEntity> AddAsync( TEntity entity );

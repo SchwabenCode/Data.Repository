@@ -13,6 +13,11 @@ namespace SchwabenCode.Data.Repository
         where TIdentifier : struct
     {
         /// <summary>
+        /// Checks existance of given id
+        /// </summary>
+        bool Exists( TIdentifier id );
+
+        /// <summary>
         /// Adds given entity
         /// </summary>
         TEntity Add( TEntity entity );
